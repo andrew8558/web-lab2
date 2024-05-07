@@ -1,0 +1,18 @@
+
+.hw_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.send_hw{
+    max-width: 200px;
+}
+
+.hw_form label{
+    display: none;
+}
+
+.hw_form textarea{
+    width: 700px;
+    height: 200px;
+}

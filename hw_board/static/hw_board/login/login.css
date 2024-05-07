@@ -1,0 +1,70 @@
+#id_password, #id_login{
+    border-radius: 5%;
+    outline: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-height: 20px;
+}
+
+
+#id_password:valid{
+    border: 2px solid green;
+
+}
+
+#id_password:invalid{
+    border: 2px solid red;
+}
+
+#id_login:valid{
+    border: 2px solid green;
+}
+
+#id_login:invalid{
+    border: 2px solid red;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 42%;
+    top: 50px;
+}
+
+.login > div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.login > div > label{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login > label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+#login_btn{
+    background-color: rgb(120, 158, 241);
+    border: none;
+    min-height: 30px;
+    min-width: 50px;
+    border-radius: 10%;
+}
+
+.login > a > label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.login > a{
+    margin: 30px;
+}

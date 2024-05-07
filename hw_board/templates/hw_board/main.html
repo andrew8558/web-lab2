@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{course_name}}</title>
+    <link rel="stylesheet" href="{% static 'hw_board/header/header.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/main/main.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/signup/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/courses/courses.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/hw/hw.css' %}">
+</head>
+<body>
+    <header>
+        <input type="button" name="home" class="home_btn" value="Домой" onclick = "window.location.href='/hw_board/'"/>
+        <div class="dropdown">
+            <input type="button" name="drop_btn" class="drop_btn" value="Дисциплины"/>
+            <div class="drop-content">
+                {% for course in courses %}
+                    <a href="/hw_board/courses/{{course}}">{{course.name}}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <input type="button" name="profile" class="prof_btn" value="Профиль" onclick = "window.location.href='/hw_board/profile/'"/>
+        <input type="button" name="journal" class="journal_btn" value="Журнал" onclick="window.location.href='/hw_board/journal/'"/>
+        <input type="button" name="logout" class="logout_btn" value="Выйти" onclick="window.location.href='/hw_board/login/'"/>
+    </header>
+    <h1>Добро пожаловать на главную страницу!</h1>
+</body>
+</html>

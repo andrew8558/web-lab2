@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" href="{% static 'hw_board/header/header.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/main/main.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/signup/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'hw_board/login/login.css' %}">
+</head>
+<body>
+
+    <form class="login" method="post">
+        {% csrf_token %}
+        <label>Вход</label>
+        {{ form }}
+        <input type="submit" value="Войти" name="login_btn" id="login_btn"/>
+        <a href="/hw_board/signup/"><label>Зарегистрироваться</label></a>
+    </form>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
